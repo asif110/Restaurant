@@ -24,6 +24,13 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)handle:(id)sender {
+    ViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"registrationComplete"];
+    if (view)
+    {
+        //TODO why is this not working and alternative to second one
+        //[self.navigationController pushViewController:view animated:YES];
+        [self presentModalViewController:view animated:YES];
+    }
 }
 
 @end
