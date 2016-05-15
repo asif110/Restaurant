@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSString * m_sName;
+    NSString * m_sEmail;
+    NSString * m_sPassword;
+    NSString * m_sConfirmPasword;
+}
+@property (nonatomic, retain) IBOutlet UITextField* nameText;
+@property (nonatomic, retain) IBOutlet UITextField* emailText;
+@property (nonatomic, retain) IBOutlet UITextField* passwordText;
+@property (nonatomic, retain) IBOutlet UITextField* confirmText;
 
 
 @end
